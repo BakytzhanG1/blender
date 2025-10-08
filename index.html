@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bakytzhan.G1</title>
+	<link rel="stylesheet" type="text/css" href="css/style_G1.css">
+</head>
+<body>
+	<section>
+		<video id="slider" autoplay muted loop>
+			<source src="vid/video1.mp4" type="video/mp4">
+		</video>
+		<ul class="navigation">
+			<li onclick="videoUrl('vid/video1.mp4')"><img src="img/i1.png"></li>
+			<li onclick="videoUrl('vid/video2.mp4')"><img src="img/i2.png"></li>
+			<li onclick="videoUrl('vid/video3.mp4')"><img src="img/i3.png"></li>
+			<li onclick="videoUrl('vid/video4.mp4')"><img src="img/i4.png"></li>
+		</ul>
+	</section>
+	<script type="text/javascript">
+		function videoUrl(hmmmmmm){
+			document.getElementById("slider").src = hmmmmmm;
+		}
+	</script>
+	<script>!function(window){const host="https://labs.heygen.com",url=host+"/guest/streaming-embed?share=eyJxdWFsaXR5IjoiaGlnaCIsImF2YXRhck5hbWUiOiJiNzZiNTdmZDhkOTM0YzRhOGY1MWM3OTlm%0D%0AN2I0YmE2MCIsInByZXZpZXdJbWciOiJodHRwczovL2ZpbGVzMi5oZXlnZW4uYWkvYXZhdGFyL3Yz%0D%0AL2I3NmI1N2ZkOGQ5MzRjNGE4ZjUxYzc5OWY3YjRiYTYwL2Z1bGwvMi4yL3ByZXZpZXdfdGFyZ2V0%0D%0ALndlYnAiLCJuZWVkUmVtb3ZlQmFja2dyb3VuZCI6ZmFsc2UsImtub3dsZWRnZUJhc2VJZCI6Ijgy%0D%0AOWQwZjMzNTYzYTRkODQ4ZTE4OTU2ODEzOTVkNzUxIiwic2hhcmVfY29kZSI6IjVmYmE2MWUxLWNj%0D%0AMmMtNDM1Mi04ZTJmLWUxYzJlMWNkMWI0ZiIsInVzZXJuYW1lIjoiOWZiYjczODNkMmFhNDgxM2Fl%0D%0AM2FmODU5NjFjNjEzMGIifQ%3D%3D&inIFrame=1",clientWidth=document.body.clientWidth,wrapDiv=document.createElement("div");wrapDiv.id="heygen-streaming-embed";const container=document.createElement("div");container.id="heygen-streaming-container";const stylesheet=document.createElement("style");stylesheet.innerHTML=`\n  #heygen-streaming-embed {\n    z-index: 9999;\n    position: fixed;\n    right: 40px;\n    bottom: 40px;\n    width: 200px;\n    height: 200px;\n    border-radius: 50%;\n    border: 2px solid #fff;\n    box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.12);\n    transition: all linear 0.1s;\n    overflow: hidden;\n\n    opacity: 0;\n    visibility: hidden;\n  }\n  #heygen-streaming-embed.show {\n    opacity: 1;\n    visibility: visible;\n  }\n  #heygen-streaming-embed.expand {\n    ${clientWidth<540?"height: 266px; width: 96%; right: 50%; transform: translateX(50%);":"height: 366px; width: calc(366px * 16 / 9); right: 40px;"}\n    border: 0;\n    border-radius: 8px;\n  }\n  #heygen-streaming-container {\n    width: 100%;\n    height: 100%;\n  }\n  #heygen-streaming-container iframe {\n    width: 100%;\n    height: 100%;\n    border: 0;\n  }\n  `;const iframe=document.createElement("iframe");iframe.allowFullscreen=!1,iframe.title="Streaming Embed",iframe.role="dialog",iframe.allow="microphone",iframe.src=url;let visible=!1,initial=!1;window.addEventListener("message",(e=>{e.origin===host&&e.data&&e.data.type&&"streaming-embed"===e.data.type&&("init"===e.data.action?(initial=!0,wrapDiv.classList.toggle("show",initial)):"show"===e.data.action?(visible=!0,wrapDiv.classList.toggle("expand",visible)):"hide"===e.data.action&&(visible=!1,wrapDiv.classList.toggle("expand",visible)))})),container.appendChild(iframe),wrapDiv.appendChild(stylesheet),wrapDiv.appendChild(container),document.body.appendChild(wrapDiv)}(globalThis);</script>
+		<script type="text/javascript">   
+		    let lastScrollTop = 0;
+		    window.addEventListener('scroll', () => {
+		        let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		        if (currentScrollTop > lastScrollTop) {
+		            window.scrollTo({
+		                top: document.body.scrollHeight,
+		                behavior: 'smooth'
+		            });
+		        }
+		        lastScrollTop = currentScrollTop;
+		    });
+		</script>
+		<iframe src="https://stepik.org/course/238983/promo" position: relative; left: 50%; transform: translateX(-50%); height="1080px" width="100%"></iframe>
+</body>
+</html>
